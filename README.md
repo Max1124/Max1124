@@ -9,8 +9,11 @@ O meu nome é Maximino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/Javascript-%23007ACC.svg?style=for-the-badge&logo=javascript&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+![C](https://img.shields.io/badge/-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-%23C0392B.svg?style=for-the-badge&logo=css3&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-%23FF6600.svg?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Native](https://img.shields.io/badge/react%20native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -40,11 +43,17 @@ O meu nome é Maximino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
 
 ### Trabalhos Acadêmicos
 
-### [Sistema de Gestão de Biblioteca (React)](https://github.com/Max1124/sisdis](https://github.com/Max1124/DSSMV_ProjectDroid_1211378_1240708) - Aplicação móvel para Android, desenvolvida com boa arquitetura, separação de responsabilidades, código limpo e organizado, consumindo uma API REST fornecida pelos professores
-
+### [Sistema de Gestão de Bibliotecas (React)](https://github.com/Max1124/DSSMV_ProjectDroid_1211378_1240708) - Aplicação móvel para Android, desenvolvida com boa arquitetura, separação de responsabilidades, código limpo e organizado, consumindo uma API REST fornecida pelos professores
+**Descrição das Camadas e Funções**
+- **Fragment** - onde se encontra a lógica da aplicação e a interação com o utilizador, com a configuração de cliques, botões, popups e decide quando se deve chamar as funções que comunicam com o backend
+- **HttpOperation** - onde se encontram todas as funções que pedem dados à API, através dos seus diferentes endpoints
+- **JsonHandler** - responsável por tranformar o JSON recebido da API em DTOs (Data Tranfer Object), onde como o nome indica irá armazenar temporariamente os dados do objeto, esta separação permite o parsing do JSON isolado
+- **Mapper** - responsável por converter os DTOs em models concretos da aplicação (que são utilizados pela UI)
+- **Adapter** - ponte entre os models e o RecyclerView (lista), tranformando cada objeto em elementos visuais na interface
+- **UI (Interface do Utilizador)** - interface do utilizador, onde o mesmo consegue visualizar botões, listas, mensagens, entre outros
 #
 
-### [Sistema de Gestão de Biblioteca (React Native)](https://github.com/Max1124/sisdis](https://github.com/Max1124/Library_Management_React) - Aplicação para Android que permite gerenciar bibliotecas, consumindo uma API REST fornecida pelos professores e uma API externa para autenticação
+### [Sistema de Gestão de Biblioteca (React Native)](https://github.com/Max1124/Library_Management_React) - Aplicação para Android que permite gerenciar bibliotecas, consumindo uma API REST fornecida pelos professores e uma API externa para autenticação
 **Descrição das Camadas e Funções**
 - **Service** - Responsável por buscar dados da API.
 - **Pasta Utils** - Contém funções auxiliares para manter o código limpo e facilitar testes unitários.
@@ -66,7 +75,7 @@ O meu nome é Maximino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
   4. Dispatch atualiza novamente o estado com sucesso ou erro
 #
 
-### [Sistemas Distribuídos](https://github.com/Max1124/sisdis) - Aplicação inicialmente monolítica, re-contruída para uma arquitetura distribuída com comunicação assíncrona entre serviços com a utilização de AMQP e RabbitMQ
+### [Sistemas Distribuídos](https://github.com/Max1124/sisdis) - Aplicação inicialmente monolítica, reconstruída para uma arquitetura distribuída com comunicação assíncrona entre serviços com a utilização de AMQP e RabbitMQ
 **Descrição**:
 - **Aplicação Monolítica** - aplicação onde todas as funcionalidades então dentro de um único bloco de código, exemplo: frontend, backend e base de dados todos juntos
 - **Arquitetura Distribuída** - aplicação dividida em vários serviços independentes entre si (cada serviço é responsável por uma funcionalidade específica), no entanto que conseguem comunicar entre si
