@@ -2,9 +2,9 @@
 
 **`Full Stack Developer`**
 
-O meu nome é Maixmino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha licenciatura de Engenheria de Telecomunicações e Informática no Instituto Superior de Engenharia do Porto (ISEP), e de momento estou a à procura de trabalho e a realizar em regime parcial algumas cadeiras de mestrado, Engenharia de software. Profissionalmente ainda só tive a oportunidade de estagiar na Samsys - Consultoria e Soluções Informáticas em Ermesinde, onde tive a possibilidade de fortalecer uma componente de um produto já em funcionamento, a gestão de estados, da aplicação Assistsys - Plataforma de Assistência Técnica. Para o desenvolvimento desta aplicação, tive que mexer tanto no backend como no Frontend, utilizando C# e TypeScript, respetivamente. Em baixo irei disponibilizar algumas informações de trabalhos desenvolvidos ao longo do meu percurso acadêmico, assim como os trabalhos no meu perfil.
+O meu nome é Maximino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha licenciatura de Engenheria de Telecomunicações e Informática no Instituto Superior de Engenharia do Porto (ISEP), e de momento estou a à procura de trabalho e a realizar em regime parcial algumas cadeiras de mestrado, Engenharia de software. Profissionalmente ainda só tive a oportunidade de estagiar na Samsys - Consultoria e Soluções Informáticas em Ermesinde, onde tive a possibilidade de fortalecer uma componente de um produto já em funcionamento, a gestão de estados, da aplicação Assistsys - Plataforma de Assistência Técnica. Para o desenvolvimento desta aplicação, tive que mexer tanto no backend como no Frontend, utilizando C# e TypeScript, respetivamente. Em baixo irei disponibilizar algumas informações de trabalhos desenvolvidos ao longo do meu percurso acadêmico, assim como os trabalhos no meu perfil.
 
-### 🧰 Linguagens e ferramentas
+### Linguagens e ferramentas
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -23,21 +23,20 @@ O meu nome é Maixmino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
 
 ### Estatísticas
 
-<img 
-    align="left" 
+<p align="left">
+  <img 
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=max1124&show_icons=true&theme=radical&include_all_commits=true&locale=pt" 
-/>
-
-<img 
-    align="left" 
-    alt="GitHub Stats" 
+    src="https://github-stats-card-generator.vercel.app/api/svg?username=max1124&theme=radical" 
+  />
+  <img 
+    alt="Tecnologias" 
     height="200" 
     style="padding-right: 10px;"  
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=max1124&theme=radical&layout=compact&custom_title=Tecnologias&langs_count=9"
-/>
+    src="https://github-stats-card-generator.vercel.app/api/svg?username=max1124&type=languages&theme=radical"
+  />
+</p>
 
 ### Trabalhos Acadêmicos
 
