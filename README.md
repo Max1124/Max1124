@@ -21,6 +21,24 @@ O meu nome é Maixmino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
 ![Azure DevOps](https://img.shields.io/badge/azure%20devops-%230078D7.svg?style=for-the-badge&logo=azuredevops&logoColor=white)
 #
 
+### Estatísticas
+
+<img 
+    align="left" 
+    alt="GitHub Stats" 
+    height="200" 
+    style="padding-right: 10px;" 
+    src="https://github-readme-stats.vercel.app/api?username=max1124&show_icons=true&theme=radical&include_all_commits=true&locale=pt" 
+/>
+
+<img 
+    align="left" 
+    alt="GitHub Stats" 
+    height="200" 
+    style="padding-right: 10px;"  
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=max1124&theme=radical&layout=compact&custom_title=Tecnologias&langs_count=9"
+/>
+
 ### Trabalhos Acadêmicos
 
 
