@@ -40,6 +40,36 @@ O meu nome é Maximino Kokots, tenho 22 anos e sou de Portugal. Concluí a minha
 
 ### Trabalhos Acadêmicos
 
+### [Sistema de Gestão de Biblioteca (React)](https://github.com/Max1124/sisdis](https://github.com/Max1124/DSSMV_ProjectDroid_1211378_1240708) - Aplicação móvel para Android, desenvolvida com boa arquitetura, separação de responsabilidades, código limpo e organizado, consumindo uma API REST fornecida pelos professores
 
+#
 
+### [Sistema de Gestão de Biblioteca (React Native)](https://github.com/Max1124/sisdis](https://github.com/Max1124/Library_Management_React) - Aplicação para Android que permite gerenciar bibliotecas, consumindo uma API REST fornecida pelos professores e uma API externa para autenticação
+**Descrição das Camadas e Funções**
+- **Service** - Responsável por buscar dados da API.
+- **Pasta Utils** - Contém funções auxiliares para manter o código limpo e facilitar testes unitários.
+- **Pasta context** - esta pasta dentro da aplicação contêm é responsável por gerir o estado de forma unidirecional e previsível, dentro desta pasta podemos encontrar os seguintes elementos: Action, appContext, appProvider e Reducer. Utilizando arquitetura Flux:  
+  `View -> Action -> Dispatcher -> Store -> View`
+  - **Action**: lista as ações da aplicação. Exemplo:
+    - `buscarBibliotecas()`: dispara ação para buscar bibliotecas
+    - `buscarBibliotecasSucesso(lista)`: atualiza o estado com os dados recebidos
+    - `buscarBibliotecasErro(mensagem)`: atualiza o estado em caso de erro
+  - **Reducer**: recebe a action e atualiza o estado da aplicação
+  - **Provider**: 
+    1. Chama funções do **Service**
+    2. Expõe funções para as screens usarem
+    3. Processa actions via **dispatch**, atualizando o estado conforme o resultado do Service (sucesso ou erro)
+- **Fluxo resumido do Provider**:
+  1. Dispatch identifica a ação a executar
+  2. Reducer atualiza o estado conforme a ação
+  3. Service busca os dados na API
+  4. Dispatch atualiza novamente o estado com sucesso ou erro
+#
+
+### [Sistemas Distribuídos](https://github.com/Max1124/sisdis) - Aplicação inicialmente monolítica, re-contruída para uma arquitetura distribuída com comunicação assíncrona entre serviços com a utilização de AMQP e RabbitMQ
+**Descrição**:
+- **Aplicação Monolítica** - aplicação onde todas as funcionalidades então dentro de um único bloco de código, exemplo: frontend, backend e base de dados todos juntos
+- **Arquitetura Distribuída** - aplicação dividida em vários serviços independentes entre si (cada serviço é responsável por uma funcionalidade específica), no entanto que conseguem comunicar entre si
+- **AMQP** - protocolo de mensagens usado para enviar informações entre diferentes sistemas, permitindo comunicação assíncrona, ou seja, o serviço que envia a mensagem não necessita de esperar pela receção da informação enviada para poder continuar a funcionar normalmente
+- **RabbitMQ** - broker de mensagens que funciona com AMQP. Tem como função receber, armazenar e entregar mensagens entre os serviços da aplicação, facilitando a entrega segura da mensagem, mesmo com o serviço offline
 #
