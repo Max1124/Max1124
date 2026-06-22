@@ -89,3 +89,23 @@ Ao longo do meu percurso académico desenvolvi vários projetos, que se encontra
 - **AMQP** - protocolo de mensagens usado para enviar informações entre diferentes sistemas, permitindo comunicação assíncrona, ou seja, o serviço que envia a mensagem não necessita de esperar pela receção da informação enviada para poder continuar a funcionar normalmente
 - **RabbitMQ** - broker de mensagens que funciona com AMQP. Tem como função receber, armazenar e entregar mensagens entre os serviços da aplicação, facilitando a entrega segura da mensagem, mesmo com o serviço offline
 #
+
+### [Desenvolvimento de Software Seguro (VendNet)](https://github.com/Af-Oliveira/desofs2026_thu_ffs_5) - API backend segura para gestão de máquinas de vending, com foco em autenticação, controlo de acessos e qualidade contínua em pipeline DevSecOps
+**Descrição**:
+- **Objetivo do Projeto** - desenvolvimento de uma aplicação backend para gerir produtos, máquinas, vendas e telemetria numa rede de vending machines, com requisitos fortes de segurança
+- **Spring Boot API** - implementação de endpoints REST organizados por camadas (controller, service, repository), com regras de negócio isoladas e fácil manutenção
+- **JWT + RBAC** - autenticação baseada em JSON Web Tokens e autorização por perfis (`CUSTOMER`, `OPERATOR`, `ADMINISTRATOR`), garantindo acessos mínimos por função de acordo com a role em questão
+- **Testes de Segurança e Qualidade** - cobertura com testes black-box, white-box, integração e abuso de casos (ex.: esquecimento do JWT, HMAC tampering e concorrência)
+- **DevSecOps Pipeline** - validação automática com SAST, SCA, IAST, DAST e SonarQube, bloqueando regressões antes de deploy
+- **Resultado** - Quality Gate aprovado (>80%) e entrega contínua com maior confiança, segurança e estabilidade
+#
+
+### [Escalonamento de Enfermeiros (Scala)](https://github.com/tap-mei-isep/tap-pj-ncf-04)) - Geração de horários com otimização híbrida e validação funcional
+**Descrição**:
+- **Objetivo do Projeto** - desenvolvimento de uma aplicação para gerar escalas de enfermagem a partir de dados em XML, respeitando restrições operacionais e maximizando preferências ponderadas por senioridade
+- **Arquitetura Funcional em Scala** - modelação do domínio com estruturas imutáveis, funções puras e separação modular entre parsing, validação de regras e geração de horários
+- **Resolução Híbrida de Escalonamento** - combinação de dois algoritmos ocm funç~eos diferentes, um de Backtracking com Branch and Bound (abordagem exata) e outro Genético (abordagem heurística), com seleção automática da melhor solução conforme a complexidade da instância
+- **Validação de Regras e Restrições** - aplicação de restrições como capacidade, conflitos de turnos, consecutividade e consistência global do horário
+- **Testes e Qualidade** - cobertura com testes unitários, funcionais e property-based testing com ScalaCheck, incluindo geradores de cenários válidos, extremos e de falhas controlada
+- **Resultado** - solução robusta e extensível, capaz de produzir escalas válidas, de boa qualidade em diferentes níveis de complexidade 
+#
