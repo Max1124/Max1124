@@ -100,7 +100,7 @@ Ao longo do meu percurso académico desenvolvi vários projetos, que se encontra
 - **Resultado** - Quality Gate aprovado (>80%) e entrega contínua com maior confiança, segurança e estabilidade
 #
 
-### [Escalonamento de Enfermeiros (Scala)](https://github.com/tap-mei-isep/tap-pj-ncf-04)) - Geração de horários com otimização híbrida e validação funcional
+### [Escalonamento de Enfermeiros (Scala)](https://github.com/tap-mei-isep/tap-pj-ncf-04) - Geração de horários com otimização híbrida e validação funcional
 **Descrição**:
 - **Objetivo do Projeto** - desenvolvimento de uma aplicação para gerar escalas de enfermagem a partir de dados em XML, respeitando restrições operacionais e maximizando preferências ponderadas por senioridade
 - **Arquitetura Funcional em Scala** - modelação do domínio com estruturas imutáveis, funções puras e separação modular entre parsing, validação de regras e geração de horários
