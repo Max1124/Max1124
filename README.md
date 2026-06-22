@@ -2,15 +2,15 @@
 
 **`Full Stack Software Engineer`**
 
-Sou licenciado em Engenharia de Telecomunicações e Informática pelo Instituto Superior de Engenharia do Porto (ISEP) e encontro-me atualmente a frequentar o Mestrado em Engenharia de Software, no entanto à procura de novas oportunidades profissionais.
+I hold a Bachelor's degree in Telecommunications and Informatics Engineering from the Instituto Superior de Engenharia do Porto (ISEP) and I am currently pursuing a Master's degree in Software Engineering, while actively seeking new professional opportunities.
 
-Realizei estágio na Samsys – Consultoria e Soluções Informáticas, onde contribuí para o desenvolvimento da aplicação Assistsys – Plataforma de Assistência Técnica, com foco na evolução da componente de gestão de estados.
+I completed an internship at Samsys – IT Consulting and Solutions, where I contributed to the development of the Assistsys application – a technical support management platform, with a focus on improving the state management component.
 
-Nesta experiência trabalhei em desenvolvimento full stack, com C# no backend e TypeScript no frontend.
+During this experience, I worked in full stack development using C# on the backend and TypeScript on the frontend.
 
-Ao longo do meu percurso académico desenvolvi vários projetos, que se encontram disponíveis abaixo e no meu perfil.
+Throughout my academic path, I have developed several projects, which are listed below and available on my GitHub profile.
 
-### Linguagens e ferramentas
+### Languages and Tools
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -31,7 +31,7 @@ Ao longo do meu percurso académico desenvolvi vários projetos, que se encontra
 ![Azure DevOps](https://img.shields.io/badge/azure%20devops-%230078D7.svg?style=for-the-badge&logo=azuredevops&logoColor=white)
 #
 
-### Estatísticas
+### Statistics
 
 <p align="left">
   <img 
@@ -48,64 +48,64 @@ Ao longo do meu percurso académico desenvolvi vários projetos, que se encontra
   />
 </p>
 
-### Trabalhos Acadêmicos
+### Academic Projects
 
-### [Sistema de Gestão de Bibliotecas (React)](https://github.com/Max1124/DSSMV_ProjectDroid_1211378_1240708) - Aplicação móvel para Android, desenvolvida com boa arquitetura, separação de responsabilidades, código limpo e organizado, consumindo uma API REST fornecida pelos professores
-**Descrição das Camadas e Funções**
-- **Fragment** - onde se encontra a lógica da aplicação e a interação com o utilizador, com a configuração de cliques, botões, popups e decide quando se deve chamar as funções que comunicam com o backend
-- **HttpOperation** - onde se encontram todas as funções que pedem dados à API, através dos seus diferentes endpoints
-- **JsonHandler** - responsável por tranformar o JSON recebido da API em DTOs (Data Tranfer Object), onde como o nome indica irá armazenar temporariamente os dados do objeto, esta separação permite o parsing do JSON isolado
-- **Mapper** - responsável por converter os DTOs em models concretos da aplicação (que são utilizados pela UI)
-- **Adapter** - ponte entre os models e o RecyclerView (lista), tranformando cada objeto em elementos visuais na interface
-- **UI (Interface do Utilizador)** - interface do utilizador, onde o mesmo consegue visualizar botões, listas, mensagens, entre outros
+### [Library Management System (React)](https://github.com/Max1124/DSSMV_ProjectDroid_1211378_1240708) - Mobile Android application developed with a clean architecture approach, separation of concerns, and structured code, consuming a REST API provided by lecturers
+**Layer Description and Responsibilities**
+- **Fragment** - contains application logic and user interaction, handling UI events (buttons, dialogs, popups) and triggering backend communication functions
+- **HttpOperation** - contains all functions responsible for API requests through different endpoints
+- **JsonHandler** - responsible for converting JSON responses into DTOs (Data Transfer Objects), isolating parsing logic
+- **Mapper** - converts DTOs into application models used by the UI
+- **Adapter** - bridge between models and RecyclerView, transforming objects into visual UI elements
+- **UI (User Interface)** - presentation layer where users interact with buttons, lists, messages, etc
 #
 
-### [Sistema de Gestão de Biblioteca (React Native)](https://github.com/Max1124/Library_Management_React) - Aplicação para Android que permite gerenciar bibliotecas, consumindo uma API REST fornecida pelos professores e uma API externa para autenticação
-**Descrição das Camadas e Funções**
-- **Service** - Responsável por buscar dados da API.
-- **Pasta Utils** - Contém funções auxiliares para manter o código limpo e facilitar testes unitários.
-- **Pasta context** - esta pasta dentro da aplicação contêm é responsável por gerir o estado de forma unidirecional e previsível, dentro desta pasta podemos encontrar os seguintes elementos: Action, appContext, appProvider e Reducer. Utilizando arquitetura Flux:  
+### [Library Management System (React Native)](https://github.com/Max1124/Library_Management_React) - Android application for library management, consuming a REST API provided by lecturers and an external authentication API
+**Layer Description and Responsibilities**
+- **Service** - responsible for fetching data from the API
+- **Utils folder** - contains helper functions to keep code clean and support unit testing
+- **Context folder** - manages state in a unidirectional and predictable way using Flux architecture: 
   `View -> Action -> Dispatcher -> Store -> View`
-  - **Action**: lista as ações da aplicação. Exemplo:
-    - `buscarBibliotecas()`: dispara ação para buscar bibliotecas
-    - `buscarBibliotecasSucesso(lista)`: atualiza o estado com os dados recebidos
-    - `buscarBibliotecasErro(mensagem)`: atualiza o estado em caso de erro
-  - **Reducer**: recebe a action e atualiza o estado da aplicação
+  - **Action**: defines application actions, e.g.:
+    - `fetchLibraries()`: triggers library retrieval
+    - `fetchLibrariesSuccess(data)`: updates state with received data
+    - `fetchLibrariesError(message)`:handles errors
+  - **Reducer**: receives actions and updates application state
   - **Provider**: 
-    1. Chama funções do **Service**
-    2. Expõe funções para as screens usarem
-    3. Processa actions via **dispatch**, atualizando o estado conforme o resultado do Service (sucesso ou erro)
-- **Fluxo resumido do Provider**:
-  1. Dispatch identifica a ação a executar
-  2. Reducer atualiza o estado conforme a ação
-  3. Service busca os dados na API
-  4. Dispatch atualiza novamente o estado com sucesso ou erro
+    1. Calls Service functions
+    2. Exposes functions to screens
+    3. Processes dispatched actions and updates state accordingly
+- **Provider flow summary:**
+  1. Dispatch identifies the action
+  2. Reducer updates state
+  3. Service fetches data from API
+  4. Dispatch updates state with success or error
 #
 
-### [Sistemas Distribuídos](https://github.com/Max1124/sisdis) - Aplicação inicialmente monolítica, reconstruída para uma arquitetura distribuída com comunicação assíncrona entre serviços com a utilização de AMQP e RabbitMQ
-**Descrição**:
-- **Aplicação Monolítica** - aplicação onde todas as funcionalidades então dentro de um único bloco de código, exemplo: frontend, backend e base de dados todos juntos
-- **Arquitetura Distribuída** - aplicação dividida em vários serviços independentes entre si (cada serviço é responsável por uma funcionalidade específica), no entanto que conseguem comunicar entre si
-- **AMQP** - protocolo de mensagens usado para enviar informações entre diferentes sistemas, permitindo comunicação assíncrona, ou seja, o serviço que envia a mensagem não necessita de esperar pela receção da informação enviada para poder continuar a funcionar normalmente
-- **RabbitMQ** - broker de mensagens que funciona com AMQP. Tem como função receber, armazenar e entregar mensagens entre os serviços da aplicação, facilitando a entrega segura da mensagem, mesmo com o serviço offline
+### [Distributed Systems](https://github.com/Max1124/sisdis) - Application initially monolithic, later refactored into a distributed architecture with asynchronous communication using AMQP and RabbitMQ
+**Description**:
+- **Monolithic Application** - system where all functionalities (frontend, backend, database) are contained in a single codebase
+- **Distributed Architecture** - system split into independent services that communicate with each other
+- **AMQP** - messaging protocol enabling asynchronous communication between services without blocking execution
+- **RabbitMQ** - message broker responsible for receiving, storing, and delivering messages reliably
 #
 
-### [Desenvolvimento de Software Seguro (VendNet)](https://github.com/Af-Oliveira/desofs2026_thu_ffs_5) - API backend segura para gestão de máquinas de vending, com foco em autenticação, controlo de acessos e qualidade contínua em pipeline DevSecOps
-**Descrição**:
-- **Objetivo do Projeto** - desenvolvimento de uma aplicação backend para gerir produtos, máquinas, vendas e telemetria numa rede de vending machines, com requisitos fortes de segurança
-- **Spring Boot API** - implementação de endpoints REST organizados por camadas (controller, service, repository), com regras de negócio isoladas e fácil manutenção
-- **JWT + RBAC** - autenticação baseada em JSON Web Tokens e autorização por perfis (`CUSTOMER`, `OPERATOR`, `ADMINISTRATOR`), garantindo acessos mínimos por função de acordo com a role em questão
-- **Testes de Segurança e Qualidade** - cobertura com testes black-box, white-box, integração e abuso de casos (ex.: esquecimento do JWT, HMAC tampering e concorrência)
-- **DevSecOps Pipeline** - validação automática com SAST, SCA, IAST, DAST e SonarQube, bloqueando regressões antes de deploy
-- **Resultado** - Quality Gate aprovado (>80%) e entrega contínua com maior confiança, segurança e estabilidade
+### [Secure Software Development (VendNet)](https://github.com/Af-Oliveira/desofs2026_thu_ffs_5) - Secure backend API for vending machine management, focusing on authentication, access control, and continuous quality within a DevSecOps pipeline.
+**Description**:
+- **Project Goal** - backend system for managing products, machines, sales, and telemetry in a vending network with strong security requirements
+- **Spring Boot API** - REST API structured in layers (controller, service, repository) with clean separation of business logic
+- **JWT + RBAC** - token-based authentication and role-based access control (CUSTOMER, OPERATOR, ADMINISTRATOR)
+- **Security & Quality Testing** - black-box, white-box, integration, and abuse-case testing (e.g. missing JWT, HMAC tampering, concurrency issues)
+- **DevSecOps Pipeline** - automated validation using SAST, SCA, IAST, DAST, and SonarQube, blocking deployments on failures
+- **Result** - Quality Gate passed (>80%) and improved delivery confidence, security, and stability
 #
 
-### [Escalonamento de Enfermeiros (Scala)](https://github.com/tap-mei-isep/tap-pj-ncf-04) - Geração de horários com otimização híbrida e validação funcional
-**Descrição**:
-- **Objetivo do Projeto** - desenvolvimento de uma aplicação para gerar escalas de enfermagem a partir de dados em XML, respeitando restrições operacionais e maximizando preferências ponderadas por senioridade
-- **Arquitetura Funcional em Scala** - modelação do domínio com estruturas imutáveis, funções puras e separação modular entre parsing, validação de regras e geração de horários
-- **Resolução Híbrida de Escalonamento** - combinação de dois algoritmos ocm funç~eos diferentes, um de Backtracking com Branch and Bound (abordagem exata) e outro Genético (abordagem heurística), com seleção automática da melhor solução conforme a complexidade da instância
-- **Validação de Regras e Restrições** - aplicação de restrições como capacidade, conflitos de turnos, consecutividade e consistência global do horário
-- **Testes e Qualidade** - cobertura com testes unitários, funcionais e property-based testing com ScalaCheck, incluindo geradores de cenários válidos, extremos e de falhas controlada
-- **Resultado** - solução robusta e extensível, capaz de produzir escalas válidas, de boa qualidade em diferentes níveis de complexidade 
+### [Nurse Scheduling System (Scala)](https://github.com/tap-mei-isep/tap-pj-ncf-04) - System for generating nurse schedules using hybrid optimization and functional validation.
+**Description**:
+- **Project Goal** - generate nurse schedules from XML data while respecting operational constraints and maximizing seniority-based preferences
+- **Functional Scala Architecture** - immutable data structures, pure functions, and modular design for parsing, validation, and scheduling logic
+- **Hybrid Scheduling Approach** - combination of exact (Backtracking with Branch and Bound) and heuristic (Genetic Algorithm) methods, selecting the best solution based on instance complexity
+- **Constraints Validation** - enforcement of capacity limits, shift conflicts, consecutivity rules, and global schedule consistency
+- **Testing & Quality** - unit, functional, and property-based testing using ScalaCheck, including edge-case and failure scenario generators
+- **Result** - robust and extensible solution capable of producing valid and high-quality schedules across different complexity levels 
 #
