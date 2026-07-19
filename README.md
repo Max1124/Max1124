@@ -1,6 +1,6 @@
 # Maximino Kokots
 
-**`Full Stack Software Engineer`**
+**`Software Engineer`**
 
 I hold a Bachelor's degree in Telecommunications and Informatics Engineering from the Instituto Superior de Engenharia do Porto (ISEP) and I am currently pursuing a Master's degree in Software Engineering, while actively seeking new professional opportunities.
 
